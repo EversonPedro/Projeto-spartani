@@ -12,11 +12,12 @@ header{
     
 }
 header>#ent{
-    margin: auto 20px auto 20px;
+    margin: auto 20px auto 0px;
 }
  header>#cads{
     margin: auto 00px auto 0px;
  }
 header>img{
-
+ position: relative;
+ left:0;
 }
