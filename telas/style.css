@@ -1,78 +1,335 @@
 @charset "UTF-8";
-*{margin: 0px;}
 
-header{
+* {
+    margin: 0px;
+}
+:root{
+    --cor0:#fff;
+    --cor1:#db4943;
+    --cor2:#df0808;
+    --cor3:#a52b09;
+    --cor4:#d49a31;
+    --cor5:#f0ac1e;
+    --cor6:#f3da98;
+    --cor7:#590202;
+    --font1:"Montserrat", sans-serif;
+    --font2:"Barlow Semi Condensed", sans-serif;
+    --font3:"Lobster", sans-serif;
+
+}
+/*f1*/
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/*f2*/
+.barlow-semi-condensed-regular {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*f3*/
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*topo do site */
+header {
     display: flex;
-    background-color:#a52b09 ;
+    background-color: #a52b09;
     position: fixed;
     width: 100%;
     height: 70px;
     padding: 5px;
     justify-content: right;
-    
+
 }
-header>#ent{
-    margin: auto 50px auto 40px ;
+
+header>#ent {
+    margin: auto 50px auto 40px;
     text-decoration: none;
     color: aliceblue;
 }
- header>#cads{
-    margin: auto 00px auto 75% ;
+
+header>#cads {
+    margin: auto 00px auto 75%;
     text-decoration: none;
     background-color: #d49a31;
     color: black;
     padding: 5px;
     border-radius: 10px;
- }
+}
 
- header>#cads:hover{
-     margin: auto 00px auto 75% ;
+header>#cads:hover {
+    margin: auto 00px auto 75%;
     text-decoration: none;
     background-color: #946817;
     color: black;
     padding: 5px;
     border-radius: 10px;
 
- }
-header>img{
- position: relative;
- left:0;
- margin-left: 10px ;
 }
 
-main{
+header>img {
+    position: relative;
+    left: 0;
+    margin-left: 10px;
+}
+/*corpo*/
+main {
     padding-top: 80px;
 }
-section{
+/* section onde esta o inicio do site */
+section {
     background-color: #590202;
-    justify-content: center;
+    justify-content: right;
     padding: 30px;
-    text-align: center;
+    text-align: right;
     left: 0;
-    
+    font-family:var(--font1);
+    color: rgb(183, 185, 187);
 }
-div#fotoI{
-    margin: auto -10px auto ;
+
+div#fotoI {
+    margin: auto -10px auto;
     display: flex;
 }
-img#logosec{
-    max-width:400px;
-    max-height: 500px;
+
+img#logosec {
+    max-width: 700px;
+    max-height: 600px;
     min-width: 100px;
     width: 200px;
     margin: auto -100px auto auto;
 }
 
-img#barrasec{
-      margin: auto auto auto 100px;
-      max-width:600px;
-      max-height: 500px;
-      min-width: 100px;
-      width: 600px;
+img#barrasec {
+    margin: auto auto auto 100px;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 100px;
+    width: 600px;
 
 }
-section>h1{
-    margin: auto -100px auto auto;
+
+h1#encima {
+    margin-right: 130dvb;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    white-space: nowrap;
 }
+
+
+
+h1#baixo {
+    margin-left: 50dvb;
+    margin-right: 30dvb;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+/*article onde esta os sabores*/
+
+article#art1{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+#art1>h1{
+    padding: 30px;
+    font-size: 50px;
+    font-family: var(--font2);
+}
+
+/*banana*/
+
+div#ban{
+    display: flex;
+    background-color: var(--cor6);
+    width: 800px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom:50px;
+    height: 170px;
+    font-family: var(--font3);
+    color: #ffffff;
+}
+
+#ban:hover{
+     background-color: #bba360;
+}
+
+#ban>img{
+    width:400px ;
+    height:145px ;
+    margin: auto 0px;
+}
+#ban>h2{
+    margin: auto 30px auto;
+    font-size: 30px;
+}
+#ban>img{
+    width: 390px;
+    height: 130px;
+    margin: auto 0px;
+}
+
+/*morango*/
+
+div#mor{
+    display: flex;
+    background-color: var(--cor1);
+    width: 800px;
+    height: 170px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: var(--font3);
+}
+#mor>h2{
+    margin: auto 30px auto;
+    font-size: 30px;
+}
+#mor>img{
+    width: 400px;
+    height: 170px;
+    margin: auto 0px;
+}
+
+#mor:hover{
+     background-color: #92312f;
+}
+
+/*maracuja*/
+
+div#marc{
+    display: flex;
+    background-color: var(--cor5);
+    width: 800px;
+    height: 170px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: var(--font3);
+}
+#marc>h2{
+    margin: auto 30px auto;
+    font-size: 30px;
+}
+
+#marc>img{
+    width: 400px;
+    height: 170px;
+    margin: auto 0px;
+}
+
+#marc:hover{
+     background-color: #8a6623;
+}
+
+/*sabor surpresa*/
+div#sup{
+    display: flex;
+    background-color: var(--cor3);
+    width: 800px;
+    height: 170px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto ;
+    margin-bottom: 50px;
+    font-family: var(--font3);
+}
+#sup>h2{
+    margin: auto 30px auto;
+    font-size: 30px;
+}
+#sup>img{
+    width: 400px;
+    height: 170px;
+    margin: auto 0px;
+}
+
+#sup:hover{
+     background-color: #7e0505;
+}
+#sup>a{
+    margin: auto;
+    text-decoration: none;
+    color: var(--cor0);
+    background-color: #946817;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*valores*/
+
+#val{
+    background-color:var(--cor4) ;
+    width:500px;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+#val>h2,p{
+    margin: 20px auto;
+    color: black;
+    font-family: var(--font2);
+}
+
+article#art2{
+    background-color:#a36d09;
+    padding: 20px;
+    margin: auto;
+    align-items:center ;
+    display: flex;
+}
+div.caixa{
+ display: flex;
+
+ 
+}
+div.bol{
+     background-color: #7e0505;
+     margin-bottom: 10px;
+     margin-left: 10dvb;
+     width: 100px;
+     text-align: center;
+     border-radius: 100%;
+}
+
+div.caixa>p{
+    margin-left: 20px;
+}
+div#links{
+    margin: auto;
+    height: 200px;
+    width: 300px;
+}
+
+#links>a{
+    background-color: var(--cor3);
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--cor0);
+    padding: 2px;
+}
+
+
+
+
+
 
 

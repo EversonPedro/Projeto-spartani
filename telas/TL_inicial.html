@@ -7,9 +7,23 @@
     <title>Spatani</title>
     <link rel="stylesheet" href="style.css">
 
+    <!--fonte1-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--fonte2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--fonte3-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,14 +37,14 @@
     <main>
         <section>
             <!--INICIO-->
-            <h1>Seu dia pede força</h1>
+            <h1 id="encima">Seu dia pede força</h1>
 
             <div id="fotoI">
-                <img id="logosec" src="../imagens/logo.png" alt="" >
-                <img id="barrasec"  src="../imagens/produtos.png" alt="" style="width: 700px;">
+                <img id="logosec" src="../imagens/logo.png" alt="">
+                <img id="barrasec" src="../imagens/produtos.png" alt="" style="width: 700px;">
             </div>
 
-            <h1>Sua esconha é espartani</h1>
+            <h1 id="baixo">Sua esconha é espartani</h1>
         </section>
 
         <article id="art1">
@@ -50,52 +64,58 @@
 
             <div id="sup"><img src="../imagens/saboresconha-400.png" alt="foto da barrinha de sabor opicional">
                 <h2>Seu Sabor</h2>
+                <a href="#">saiba mais</a>
+            </div>
+            <div id="val">
+                <h2>Qualidade e preço de fabrica</h2>
+                <input type="datetime">
+                <h2>R$3,39(sabor padão)</h2>
+                <h2>R$5,39(Esconha o sabor)</h2>
+                <p>No boleto ou PIX</p>
             </div>
         </article>
 
 
         <!--preços-->
         <article id="art2">
-            <div id="val">
-                <h2>Qualidade e preço de fabrica</h2>
-                <input type="datetime">
-                <h2>R$3,39(sabor padão)</h2>
-                <h2>R$5,39(ESconah o sabor)</h2>
-                <p>No boleto ou PIX</p>
-            </div>
 
             <!--pontos bons-->
-            <div id="caixa">
-                <div class="bol">
-                    <p>3,49 <br>(cada)</p>
+            <div id="mot">
+                <div class="caixa">
+                    <div class="bol">
+                        <p>3,49 <br>(cada)</p>
+                    </div>
+                    <p>a barrionha que cabe no seu bolso</p>
                 </div>
-                <p>a barrionha que cae no seu bolso</p>
+                <div class="caixa">
+                    <div class="bol">
+                        <p>Até<br>10G</p>
+                    </div>
+                    <p>de proteina por barra</p>
+                </div>
+                <div class="caixa">
+                    <div class="bol">
+                        <p>Menos de 10 Kcal</p>
+                    </div>
+                    <p>Ideal para auxiliar na sua dieta</p>
+                </div>
+                <div class="caixa">
+                    <div class="bol">
+                        <p>Rica em vitaminas</p>
+                    </div>
+                    <p>do complexo C,E e B</p>
+                </div>
             </div>
 
-            <div class="caixa">
-                <div class="bol">
-                    <p>Até<br>10G</p>
-                </div>
-                <p>de proteina por barra</p>
+            <div id="links">
+                <a href="#">Tabela nutricional</a>
+                <br>
+                <a href="#">Descrição</a>
+                <br>
+                <a href="#">Beneficios</a>
+                <br>
+                <a href="#">Depoimentos</a>
             </div>
-            <div class="caixa">
-                <div class="bol">
-                    <p>Menos de 10 Kcal</p>
-                </div>
-                <p>Ideal para auxiliar na sua dieta</p>
-            </div>
-
-            <div class="caixa">
-                <div class="bol">
-                    <p>Rica em vitaminas</p>
-                </div>
-                <p>do complexo C,E e B</p>
-            </div>
-
-            <a href="#">Tabela nutricional</a>
-            <a href="#">Descrição</a>
-            <a href="#">Beneficios</a>
-            <a href="#">Depoimentos</a>
 
         </article>
 
@@ -178,9 +198,9 @@
             </div>
         </section>
 
-                <div id="conteiner">
-                        <img src="../imagens/tabela.jpeg" style="width: 800px;"  alt="">
-                </div>
+        <div id="conteiner">
+            <img src="../imagens/tabela.jpeg" style="width: 800px;" alt="">
+        </div>
     </main>
 
     <footer>
