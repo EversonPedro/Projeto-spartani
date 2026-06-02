@@ -54,6 +54,7 @@ header {
     height: 70px;
     padding: 5px;
     justify-content: right;
+    box-shadow: -7px 5px 15px black;
 
 }
 
@@ -154,13 +155,15 @@ article#art1 {
     background-image: linear-gradient(to bottom, black 99%, #a36d09);
     background-color: black;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex: 1 1 300px;
+}
+@media(max-width:400px){
+    article#art1{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 #art1>h1 {
@@ -172,23 +175,26 @@ article#art1 {
 
 }
 
+
 /*banana*/
 
 div#ban {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--cor6);
-    text-align: center;
-    justify-content: center;
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     border-radius: 20px;
     padding: 10px;
     margin: auto;
     margin-bottom: 50px;
-    height: 170px;
+    height: 20dvb;
     font-family: var(--font3);
     color: #ffffff;
     min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
 }
 
 #ban:hover {
@@ -196,9 +202,11 @@ div#ban {
 }
 
 #ban>img {
-    width: 400px;
-    height: 145px;
-    margin: auto 0px;
+    min-width: 200px;
+    min-height: 80px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
     max-width: 800px;
     max-height: 500px;
     min-width: 200px;
@@ -208,6 +216,11 @@ div#ban {
     margin: auto 30px auto;
     font-size: clamp(16px, 3vw, 30px);
 
+}
+
+#ban>a{
+    text-decoration: none;
+    font-family: var(--font2);
 }
 
 #ban>img {
@@ -220,48 +233,79 @@ div#ban {
 
 div#mor {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--cor1);
-    width: 800px;
-    height: 170px;
+    width: 90%;
+    max-width: 800px;
     border-radius: 20px;
     padding: 10px;
     margin: auto;
     margin-bottom: 50px;
+    height: 20dvb;
     font-family: var(--font3);
+    color: #ffffff;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 #mor>h2 {
-    margin: auto 30px auto;
-    font-size: 30px;
+     margin: auto 30px auto;
+     font-size: clamp(16px, 3vw, 30px);
+
+}
+#mor>picture{
+    margin: 0;
+    padding: 0;
 }
 
 #mor>img {
-    width: 400px;
-    height: 170px;
-    margin: auto 0px;
+     min-width: 200px;
+    min-height: 80px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    max-width: 800px;
+    max-height: 500px;
+    min-width: 200px;
 }
 
 #mor:hover {
     background-color: #92312f;
 }
+#mor>a{
+    text-decoration: none;
+    font-family: var(--font2);
+}
+
+@media(max-width:400px){
+    div#mor{
+        height: 110px;
+    }
+}
 
 /*maracuja*/
 
 div#marc {
+    height: 20dvb;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--cor5);
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     height: 170px;
     border-radius: 20px;
     padding: 10px;
     margin: auto;
     margin-bottom: 50px;
     font-family: var(--font3);
+    justify-content: center;
+    align-items: center;
 }
 
 #marc>h2 {
     margin: auto 30px auto;
-    font-size: 30px;
+    font-size: clamp(16px, 3vw, 30px);
 }
 
 #marc>img {
@@ -274,28 +318,50 @@ div#marc {
     background-color: #8a6623;
 }
 
+#marc>a{
+    text-decoration: none;
+    font-family: var(--font2);
+}
+
+@media(max-width:400px) {
+    div#marc{
+        height:110px ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /*sabor surpresa*/
 div#sup {
+    height: 20dvb;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--cor3);
-    width: 800px;
-    height: 170px;
+    width: 90%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 185px;
     border-radius: 20px;
     padding: 10px;
     margin: auto;
     margin-bottom: 50px;
     font-family: var(--font3);
+    justify-content: center;
+    align-items: center;
 }
 
 #sup>h2 {
     margin: auto 30px auto;
-    font-size: 30px;
+    font-size: clamp(16px, 3vw, 30px);
 }
 
 #sup>img {
     width: 400px;
     height: 170px;
-    margin: auto 0px;
+    margin: auto;
+    display: block;
+    margin-right: -8px;
 }
 
 #sup:hover {
@@ -303,53 +369,76 @@ div#sup {
 }
 
 #sup>a {
-    margin: auto;
+    margin: auto 0px;
     text-decoration: none;
     color: var(--cor0);
     background-color: #946817;
     border-radius: 10px;
     padding: 5px;
+
+}
+@media(max-width:400px){
+    div#sup{
+        height:130px ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /*valores*/
 
 #val {
     background-color: var(--cor4);
-    width: 500px;
-    height: 250px;
+    width: 80%;
+    max-width:500px; ;
+    height: 50%;
     margin: auto;
+    margin-bottom: 20px;
     border-radius: 20px;
     padding: 20px;
 }
 
-#val>h2,
-p {
+#val>h2,p {
     margin: 20px auto;
     color: black;
     font-family: var(--font2);
+    font-size: clamp(16px, 5vw, 30px);
 }
-
+/*pontos bons*/
 article#art2 {
     background-image: linear-gradient(to bottom, #a36d09 99%, var(--cor6));
     padding: 20px;
     margin: auto;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10;
 }
-
 div.caixa {
     display: flex;
 
 
 }
 
-div.bol {
+#mot{
+    margin: 30px 20px;
+}
+
+.bol {
     background-color: #7e0505;
     margin-bottom: 10px;
-    margin-left: 10dvb;
+    margin-left: 3dvb;
     width: 100px;
     text-align: center;
     border-radius: 100%;
+}
+
+.bol>p{
+    font-size: clamp(16px, 3vw, 20px);
+}
+.caixa>p{
+     font-size: clamp(16px, 3vw, 20px);
 }
 
 div.caixa>p {
@@ -357,7 +446,7 @@ div.caixa>p {
 }
 
 div#links {
-    margin: auto;
+    margin: 50px auto;
     height: 200px;
     width: 300px;
 }
@@ -404,9 +493,9 @@ aside#des {
     border-radius: 30px;
     max-width: 800px;
     max-height: 500px;
-    min-height:200px ;
-    min-width: 200px;
-    width: 800px;
+    min-height:280px ;
+    min-width: 280px;
+    width: 90%;
 }
 
 /*beneficios*/
