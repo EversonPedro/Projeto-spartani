@@ -472,13 +472,13 @@ div#links {
 
 aside#des {
     background-image: linear-gradient(to bottom, var(--cor6) 99%, black);
-    padding: 80px;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
     flex: 1 1 300px;
 
 }
@@ -487,6 +487,7 @@ aside#des {
     width: 90dvb;
     min-width: 290px;
     text-align: justify;
+    font-size: clamp(16px, 3vw, 20px);
 }
 
 #des>img {
@@ -533,38 +534,64 @@ div.bens>h3 {
 section#s2 {
     background-image: linear-gradient(to bottom, black 99%,#7e0505);
     padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 
 }
 
 div.dep {
     display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    flex: 1 1 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
     margin: 20px;
 }
 
 div.dep>p {
     color: var(--cor0);
-    margin: auto;
-    max-width: 500px;
+    max-width: 450px;
+    font-size: clamp(16px, 3vw, 25px);
+    margin: auto 0px;
 }
 
-div.dep>img {
-    width: 400px;
-    margin: 0px 10px;
+.dep>picture>img {
+    width: 80%;
+    margin: auto;
+    max-width:500px ;
+    min-width: 70%;
     border: 5px solid var(--cor7);
     border-radius: 20px;
+}
+
+@media(max-width:400px){
+    .dep>picture>img{
+        width: 280px;
+    }
+    div.dep{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 div#conteiner {
     background-color: #7e0505;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   align-items: center;
+   justify-content: center;
 }
 
 div#conteiner>img {
     width: 40%;
-    max-width: 600px;
-    margin: 40px;
+    max-width: 500px;
+    min-width: 280px;
+    margin: 40px auto;
     border: 4px solid rgba(0, 0, 0, 0.473);
 }
 
