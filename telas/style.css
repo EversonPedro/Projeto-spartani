@@ -181,6 +181,7 @@ article#art1 {
 div#ban {
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
     background-color: var(--cor6);
     width: 90%;
     max-width: 800px;
@@ -194,7 +195,6 @@ div#ban {
     min-width: 200px;
     justify-content: center;
     align-items: center;
-    overflow-wrap: break-word;
 }
 
 #ban:hover {
@@ -212,6 +212,13 @@ div#ban {
     min-width: 200px;
 }
 
+@media(max-width:500px){
+    div#ban{
+      width: 90%;
+      height: 16.5dvb;
+    }
+}
+
 #ban>h2 {
     margin: auto 30px auto;
     font-size: clamp(16px, 3vw, 30px);
@@ -219,7 +226,7 @@ div#ban {
 }
 
 #ban>a{
-    text-decoration: none;
+   text-decoration: none;
     font-family: var(--font2);
 }
 
@@ -260,7 +267,7 @@ div#mor {
 }
 
 #mor>img {
-     min-width: 200px;
+    min-width: 200px;
     min-height: 80px;
     width: 50%;
     height: 50%;
@@ -434,11 +441,13 @@ div.caixa {
     border-radius: 100%;
 }
 
+
 .bol>p{
     font-size: clamp(16px, 3vw, 20px);
 }
 .caixa>p{
-     font-size: clamp(16px, 3vw, 20px);
+     font-size: clamp(18px, 3vw, 20px);
+     display: block;
 }
 
 div.caixa>p {
