@@ -98,15 +98,33 @@ main {
 
 /* section onde esta o inicio do site */
 section {
-    background-image: linear-gradient(to bottom, var(--cor7) 98%, rgba(0, 0, 0, 0.973));
+    background-image: url(../imagens/fundo02.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     justify-content: right;
     padding: 30px;
     text-align: right;
     font-size: 1.5dvb;
     left: 0;
     font-family: var(--font1);
-    color: rgb(183, 185, 187);
+    color:var(--cor0);
     overflow-wrap: break-word;
+}
+
+
+section::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #1a120d
+    );
 }
 
 div#fotoI {
@@ -154,7 +172,7 @@ h1#baixo {
 
 article#art1 {
     color: aliceblue;
-    background-image: linear-gradient(to bottom, black 99%, #a36d09);
+    background-image: linear-gradient(to bottom,black 99%, #a36d09);
     background-color: black;
     text-align: center;
     padding: 10px;
@@ -828,5 +846,104 @@ aside#det{
        display: block;
     }
 }
+
+
+main#entr{
+    text-align: center;
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+div#dados{
+    margin: 50px;
+    color: var(--cor0);
+    background-color: var(--cor8);
+    padding: 30px;
+    padding-top: 5px;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 500px;
+    border: 3px #59020265 solid;
+}
+div#dados>h1{
+    font-family: var(--font3);
+}
+div#dados>input{
+   margin: 20px;
+   height: 30px;
+   border-radius: 10px;
+   border: none;
+   text-align: center;
+}
+
+div#dados>img{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+
+div#dados02{
+    margin: 50px;
+    color: var(--cor0);
+    background-image: linear-gradient(to bottom,var(--cor7) , var(--cor8));
+    padding: 30px;
+    padding-top: 5px;
+    border-radius: 30px;
+    width: 50%;
+    min-width: 250px;
+    min-height: 350px;
+
+    max-width: 500px;
+    border: 3px #f7a40a98 solid;
+}
+div#dados02>h1{
+    font-family: var(--font3);
+    margin-bottom: 30px;
+}
+div#dados02>input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+   height: 30px;
+   border-radius: 10px;
+   border: 1px solid var(--cor7);
+   text-align: center;
+   background-color: var(--cor8);
+   color: var(--cor0);
+}
+
+div#dados02>img{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+div#dados02>p{
+    font-size: clamp(10px, 3vw, 10px);
+    margin: 0px;
+    color: var(--cor0);
+    
+}
+
+#butao{
+    background-color: var(--cor7);
+    color: var(--cor0);
+    width: 150px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
 
 
