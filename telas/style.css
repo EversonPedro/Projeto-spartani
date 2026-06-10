@@ -858,13 +858,14 @@ main#entr{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: -60px;
     padding-bottom: 20px;
 }
 
 div#dados{
-    margin: 50px;
+    margin-bottom: 100px;
     color: var(--cor0);
-    background-color: var(--cor8);
+     background-image: linear-gradient(to bottom,var(--cor7) , var(--cor8));
     padding: 30px;
     padding-top: 5px;
     border-radius: 30px;
@@ -936,6 +937,112 @@ div#dados02>p{
     width: 150px;
     height: 25px;
 }
+
+#ma_comp{
+    background-image: url(../imagens/fundo02.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--cor0);
+    padding: 50px;
+    text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#ma_comp>h1{
+    background: linear-gradient(to bottom,#a36d09 50%, #422c03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+
+#da-ps{
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid var(--cor8);
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 758px){
+    #da-ps{
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid var(--cor8);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}  
+}
+
+#da-ps>h2{
+    margin: 20px auto;
+    white-space: nowrap ;
+}
+#da-ps>a{
+    text-decoration: none;
+    background-color: #ac8030ea;
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--font1);
+}
+
+#da-ps>a:hover{
+    background-color: #7e0505b2;
+}
+
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dads{
+  margin: 10px;
+}
+
+.dads>p{
+    color: var(--cor0);
+    font-size: clamp(0px, 3vw, 10px);
+    font-family: var(--font2);
+    
+}
+
+.dads>input{
+    background-color: #1a120d;
+    border-color: #a36d09;
+    color: var(--cor0);
+}
+
+.dads>select{
+    background-color: #1a120d;
+    border-color: #a36d09;
+    color: var(--cor0);
+}
+
+.pre-fim{
+    display: flex;
+    margin: 30px auto;
+    border: #a36d0971 1px solid;
+}
+
+#vau{
+    background-color: #a36d09;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+}
+.pre-fim>h2{
+   margin: 5px;
+   padding: 3px; 
+   background-color: #a36d094b;
+   border-radius: 2px;
+}
+
 
 
 
